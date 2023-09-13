@@ -19,15 +19,24 @@ Use imwrite(filename, image) to write the image.
 ### Step5:
 End the program and close the output image windows.
 ## Program:
-### Developed By:
-### Register Number: 
+### Developed By:JEEVITHA E
+### Register Number: 212222230054
 i) #To Read,display the image
 ```
-  
+import cv2
+color_image=cv2.imread('rose.jpg',1)
+cv2.imshow('212222230054_JEEVITHA',color_image)
+cv2.waitKey(0)
+
 
 ```
 ii) #To write the image
 ```
+import cv2
+img = cv2.imread('waterb.jpg', 1)
+new_img = cv2.imwrite('rose.jpg', img)
+cv2.imshow('212222230054_JEEVITHA', img)
+cv2.waitKey(0)
 
 
 
@@ -35,19 +44,36 @@ ii) #To write the image
 iii) #Find the shape of the Image
 ```python3
 
+import cv2
+img = cv2.imread('rose.jpg', 1)
+print(img.shape)
 
 
 ```
 iv) #To access rows and columns
 
 ```python3
-
+import cv2
+import random
+img = cv2.imread('rose.jpg', 1)
+for i in range(100):
+    for j in range(img.shape[1]):
+        img[i][j] = [random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)]
+cv2.imshow('part image', img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 
 ```
 v) #To cut and paste portion of image
 ```python3
 
+import cv2
+img = cv2.imread('rose.jpg', 1)
+tag = img[200:400, 200:400]
+img[200:400,600:800] = tag
+cv2.imshow('212222230054_jeevitha', img)
+cv2.waitKey(0)
 
 
 ```
@@ -57,24 +83,33 @@ v) #To cut and paste portion of image
 ### i) Read and display the image
 
 <br>
+![WhatsApp Image 2023-09-13 at 17 16 29](https://github.com/Jeevithaelumalai/READ-AND-WRITE-IMAGE/assets/118708245/ff30abab-3f5b-4c20-a6c3-73a6f4e5bb3b)
+
 <br>
 
 ### ii)Write the image
 
 <br>
+![WhatsApp Image 2023-09-13 at 17 16 29](https://github.com/Jeevithaelumalai/READ-AND-WRITE-IMAGE/assets/118708245/4e84300b-6aac-4b67-9478-4e08ec9a1e0a)
+
 <br>
 
 ### iii)Shape of the Image
 
 <br>
+![WhatsApp Image 2023-09-13 at 17 16 29](https://github.com/Jeevithaelumalai/READ-AND-WRITE-IMAGE/assets/118708245/81ab1fe3-e1fb-4cf2-bdaf-c19de81f451f)
+
 <br>
 
 ### iv)Access rows and columns
 <br>
+![WhatsApp Image 2023-09-13 at 17 15 26](https://github.com/Jeevithaelumalai/READ-AND-WRITE-IMAGE/assets/118708245/16be4ef7-3ecc-4ad2-905d-e5f47481cd01)
+
 <br>
 
 ### v)Cut and paste portion of image
 <br>
+
 <br>
 
 ## Result:
