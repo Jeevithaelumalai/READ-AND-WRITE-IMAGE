@@ -71,7 +71,7 @@ v) #To cut and paste portion of image
 import cv2
 img = cv2.imread('rose.jpg', 1)
 tag = img[200:400, 200:400]
-img[200:400,600:800] = tag
+img[100:300,100:300] = tag
 cv2.imshow('212222230054_jeevitha', img)
 cv2.waitKey(0)
 
@@ -82,35 +82,34 @@ cv2.waitKey(0)
 
 ### i) Read and display the image
 
-<br>
+
 ![WhatsApp Image 2023-09-13 at 17 16 29](https://github.com/Jeevithaelumalai/READ-AND-WRITE-IMAGE/assets/118708245/ff30abab-3f5b-4c20-a6c3-73a6f4e5bb3b)
 
-<br>
+
 
 ### ii)Write the image
 
-<br>
+
 ![WhatsApp Image 2023-09-13 at 17 16 29](https://github.com/Jeevithaelumalai/READ-AND-WRITE-IMAGE/assets/118708245/4e84300b-6aac-4b67-9478-4e08ec9a1e0a)
 
-<br>
 
 ### iii)Shape of the Image
 
-<br>
 ![WhatsApp Image 2023-09-13 at 17 16 29](https://github.com/Jeevithaelumalai/READ-AND-WRITE-IMAGE/assets/118708245/81ab1fe3-e1fb-4cf2-bdaf-c19de81f451f)
 
-<br>
 
 ### iv)Access rows and columns
-<br>
+
 ![WhatsApp Image 2023-09-13 at 17 15 26](https://github.com/Jeevithaelumalai/READ-AND-WRITE-IMAGE/assets/118708245/16be4ef7-3ecc-4ad2-905d-e5f47481cd01)
 
-<br>
+
 
 ### v)Cut and paste portion of image
-<br>
 
-<br>
+![WhatsApp Image 2023-09-13 at 20 51 59](https://github.com/Jeevithaelumalai/READ-AND-WRITE-IMAGE/assets/118708245/f9c82e24-9332-4a58-85c0-a6c49e18c1e4)
+
+
+
 
 ## Result:
 Thus the images are read, displayed, and written successfully using the python program.
